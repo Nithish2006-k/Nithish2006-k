@@ -1,10 +1,196 @@
-## Hi there 👋
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nithish K Personal Site</title>
+  <style>
+    /* ===== Animated Gradient Background ===== */
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      padding: 0; 
+      background: linear-gradient(-45deg, #ff9a9e, #a1c4fd, #fbc2eb, #fad0c4);
+      background-size: 400% 400%;
+      animation: gradient3D 12s ease infinite;
+      color: #222;
+    }
 
-<!--
-**Nithish2006-k/Nithish2006-k** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+    @keyframes gradient3D {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
 
-Here are some ideas to get you started:
+    /* ===== Header ===== */
+    header { 
+      background: rgba(0, 0, 0, 0.75); 
+      color: white; 
+      padding: 25px; 
+      text-align: center; 
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to col
+    /* ===== Profile Section ===== */
+    .profile-container {  
+      display: flex;  
+      justify-content: center;  
+      align-items: center;  
+      flex-direction: column;  
+      margin: 40px auto;  
+      text-align: center;  
+    }
+
+    .profile-img {  
+      width: 150px;  
+      height: 150px;  
+      border-radius: 50%;  
+      border: 4px solid #fff;  
+      object-fit: cover;  
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    }
+
+    .profile-name {  
+      font-size: 28px;  
+      font-weight: bold;  
+      margin-top: 15px;  
+      color: #fff;
+      text-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .profile-profession {  
+      font-size: 18px;  
+      color: #222;  
+      margin-top: 5px;  
+    }
+
+    /* ===== Text Sections ===== */
+    section {  
+      max-width: 800px;  
+      margin: 40px auto;  
+      padding: 25px;  
+      text-align: center;  
+      color: #fff;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    h2 { 
+      font-size: 26px;
+      color: #fff;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }  
+
+    p { 
+      line-height: 1.6; 
+      font-size: 17px;
+    }  
+
+    /* ===== Logo Styling (Inside Professional Skills) ===== */
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      margin-top: 25px;
+    }
+
+    .logo-container img {
+      width: 80px;
+      height: 80px;
+      opacity: 0.95;
+      transition: all 0.4s ease;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      box-shadow: 0 4px 15px rgba(255,255,255,0.4);
+    }
+
+    /* Individual glow per logo */
+    .logo-container img[alt*="HTML"] {
+      filter: drop-shadow(0 0 15px rgba(255,102,0,0.8));
+    }
+
+    .logo-container img[alt*="CSS"] {
+      filter: drop-shadow(0 0 15px rgba(0,153,255,0.8));
+    }
+
+    .logo-container img[alt*="JavaScript"] {
+      filter: drop-shadow(0 0 15px rgba(255,235,59,0.8));
+    }
+
+    .logo-container img:hover {
+      transform: scale(1.15);
+      opacity: 1;
+    }
+
+    /* ===== Logout Button ===== */
+    .logout-btn {  
+      display: block;  
+      margin: 30px auto;  
+      padding: 12px 30px;  
+      background: #333;  
+      color: white;  
+      border: none;  
+      border-radius: 6px;  
+      font-size: 16px;
+      cursor: pointer;  
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: all 0.4s ease;
+    }
+
+    .logout-btn:hover { 
+      background: #0073b1; 
+      transform: scale(1.08);
+    }
+
+    a { color: #fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Nithish</h1>
+    <p>Discover my journey, work, and passions</p>
+  </header>
+
+  <div class="profile-container">
+    <img src="https://i.pinimg.com/originals/2b/73/9b/2b739bab4d0a6f6eee1434c6e4e6942e.jpg" alt="Nithish Profile" class="profile-img">
+    <div class="profile-name">Nithish K</div>
+    <div class="profile-profession">Aspiring Front End Developer | Tech Enthusiast</div>
+  </div>
+
+  <section>
+    <h2>About Me</h2>
+    <p>Hi, I'm Nithish. I'm passionate about technology, creativity, and making an impact.   
+    I love exploring new ideas, working on innovative projects, and continuously learning to grow as a professional.</p>
+  </section>
+
+  <section>
+    <h2>Professional Skills</h2>
+    <p><b>Skills:</b> Web Development, Programming (HTML, CSS, JavaScript), UI Design</p>
+
+    <div class="logo-container">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML Logo">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS Logo">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Logo">
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:nithishk6500@gmail.com">nithishk6500@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/nithish-k-667955355">www.linkedin.com/in/nithish-k-667955355</a></p>
+    <p>GitHub: <a href="https://github.com/Nithish2006-k">github.com/Nithish2006-k</a></p>
+  </section>
+
+  <button class="logout-btn" onclick="logout()">Logout</button>
+
+  <script>
+    function logout() {
+      alert("You have logged out!");
+      window.location.href = "login.html"; // Redirect to login page
+    }
+  </script>
+</body>
+</html>
