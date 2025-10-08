@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Nithish K Personal Site</title>
   <style>
-    /* ===== Animated Gradient Background ===== */
+    
     body { 
       font-family: Arial, sans-serif; 
       margin: 0; 
@@ -21,7 +21,7 @@
       100% { background-position: 0% 50%; }
     }
 
-    /* ===== Header ===== */
+   
     header { 
       background: rgba(0, 0, 0, 0.75); 
       color: white; 
@@ -63,7 +63,7 @@
       margin-top: 5px;  
     }
 
-    /* ===== Text Sections ===== */
+    
     section {  
       max-width: 800px;  
       margin: 40px auto;  
@@ -87,7 +87,7 @@
       font-size: 17px;
     }  
 
-    /* ===== Logo Styling (Inside Professional Skills) ===== */
+  
     .logo-container {
       display: flex;
       justify-content: center;
@@ -106,7 +106,7 @@
       box-shadow: 0 4px 15px rgba(255,255,255,0.4);
     }
 
-    /* Individual glow per logo */
+    
     .logo-container img[alt*="HTML"] {
       filter: drop-shadow(0 0 15px rgba(255,102,0,0.8));
     }
@@ -124,7 +124,7 @@
       opacity: 1;
     }
 
-    /* ===== Logout Button ===== */
+ 
     .logout-btn {  
       display: block;  
       margin: 30px auto;  
